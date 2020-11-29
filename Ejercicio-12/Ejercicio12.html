@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+ <meta name="viewport" content="width=device-width, maximum-scale=0.5">
+ <title>Ejercicio 12</title>
+ <link rel="stylesheet" type="text/css" href="Ejercicio12.css" />
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="Ejercicio12.js"></script>
+</head>
+
+<body onload="admin.procesarArchivos();">
+  <h1>Ejercicio 12</h1>
+
+  <p><input id="subirArchivos" type="file" name="Archivos" onchange="admin.procesarArchivos();" multiple></p>
+  <p>Archivos seleccionados: <span id="numero">0</span></p>
+  <p>Tamaño total: <span id="tamaño">0</span></p>
+  <span id="ficheros"></span>
+  <h2>Contenido de los ficheros:</h2>
+  <pre id="contenidoFicheros"></pre>
+  <footer>
+    <a href="http://validator.w3.org/check/referer" hreflang="en-us"> <img src="valid-html5-button.png" alt="¡HTML5 válido!" height="31" width="88" /></a>
+  </footer>
+</body>
+</html>
