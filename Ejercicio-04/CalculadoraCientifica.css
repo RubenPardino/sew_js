@@ -1,0 +1,29 @@
+body {
+    background-color: #ffffff;
+    color: #000000;
+    display: grid;
+    gap: 0.6em;
+    grid-template-columns: repeat(3,0.6fr);
+}
+
+section {
+    grid-column: 1;
+    display: grid;
+    gap: 0.6em;
+    grid-template-columns: repeat(4,0.6fr);
+    background-color: #e0eba4;
+    color: #000000;
+    border: 0.125em #000000 solid;
+}
+
+header{
+    grid-column: span 4;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#pantalla {
+    grid-column: span 4;
+    height: 3em;
+    font-size: 1em;
+}

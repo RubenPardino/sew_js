@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Calculadora Científica</title>
+  <link rel="stylesheet" href="CalculadoraCientifica.css"/>
+  <!--Aquí se inicializa el objeto calculadora-->
+  <script src="CalculadoraCientifica.js"></script>
+</head>
+
+<body>
+ <header>
+ <h1> Calculadora Científica</h1>
+ </header>
+
+<section>
+ <input type="text" id="pantalla" disabled />
+
+ <input type="button" value="π" onclick="calculadora.pi()" />
+ <input type="button" value="sen" onclick="calculadora.seno()" />
+ <input type="button" value="cos" onclick="calculadora.coseno()" />
+ <input type="button" value="tan" onclick="calculadora.tangente()" />
+
+ <input type="button" value="e" onclick="calculadora.e()" />
+ <input type="button" value="arcsen" onclick="calculadora.arcoseno()" />
+ <input type="button" value="arcos" onclick="calculadora.arcocoseno()" />
+ <input type="button" value="arctan" onclick="calculadora.arcotangente()" />
+
+ <input type="button" value="mr" onclick="calculadora.mr()" />
+ <input type="button" value="log" onclick="calculadora.logaritmo()" />
+ <input type="button" value="exp" onclick="calculadora.exp()" />
+ <input type="button" value="x^2" onclick="calculadora.pow2()" />
+
+ <input type="button" value="ms" onclick="calculadora.ms()" />
+ <input type="button" value="m-" onclick="calculadora.mMenos()" />
+ <input type="button" value="m+" onclick="calculadora.mMas()" />
+ <input type="button" value="/" onclick="calculadora.division()" />
+
+ <input type="button" value="7" onclick="calculadora.digitos(7)" />
+ <input type="button" value="8" onclick="calculadora.digitos(8)" />
+ <input type="button" value="9" onclick="calculadora.digitos(9)" />
+ <input type="button" value="*" onclick="calculadora.multiplicacion()" />
+
+ <input type="button" value="4" onclick="calculadora.digitos(4)" />
+ <input type="button" value="5" onclick="calculadora.digitos(5)" />
+ <input type="button" value="6" onclick="calculadora.digitos(6)" />
+ <input type="button" value="-" onclick="calculadora.resta()" />
+
+ <input type="button" value="1" onclick="calculadora.digitos(1)" />
+ <input type="button" value="2" onclick="calculadora.digitos(2)" />
+ <input type="button" value="3" onclick="calculadora.digitos(3)" />
+ <input type="button" value="+" onclick="calculadora.suma()" />
+
+ <input type="button" value="0" onclick="calculadora.digitos(0)" />
+ <input type="button" value="." onclick="calculadora.punto()" />
+ <input type="button" value="C" onclick="calculadora.borrar()" />
+ <input type="button" value="=" onclick="calculadora.igual()" />
+</section>
+
+<footer>
+<p></p>
+<a href="http://validator.w3.org/check/referer" hreflang="en-us"> <img src="valid-html5-button.png" alt="¡HTML5  válido!" height="31" width="88" /></a>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+  <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="¡CSS Válido!" /></a>
+</footer>
+</body>
+</html>

@@ -1,0 +1,27 @@
+body{
+    background-color:white;
+    color:black;
+}
+h1{
+    text-align:center;
+    color:red;
+    background-color: aliceblue;
+}
+h2{
+    text-align:center;
+    color:green;
+    background-color: bisque;
+}
+h3{
+    text-align:center;
+    color:blue;
+    background-color: brown;
+}
+h4{
+    text-align:center;
+    color:black;
+    background-color: crimson;
+}
+p{
+    color:black;
+}

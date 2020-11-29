@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+ <meta charset="UTF-8"/>
+ <meta name="viewport" content="width=device-width, maximum-scale=0.5">
+ <title>Ejercicio 7</title>
+ <link rel="stylesheet" type="text/css" href="Ejercicio7.css" />
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="Ejercicio7.js"></script>
+</head>
+
+<body>
+ <header>
+ <h1>Ejercicio 7</h1>
+ </header>
+
+<article>
+
+<div>
+<h2> Historia </h2>
+
+ <p id="Historia">Star Trek: The Motion Picture (en España, Star Trek: la película) es una película estadounidense de ciencia ficción que forma parte del universo de Star Trek, creado por Gene Roddenberry. 
+ Fue la primera película de la franquicia basada en la serie de los 60 (Star Trek: La Serie Original), y se estrenó el 7 de diciembre de 1979. 
+ Su director fue el ganador del Óscar de la Academia Robert Wise; era su tercer film de ciencia ficción. 
+ Star Trek: The Motion Picture revitalizó la franquicia, que continuaría la historia con nueve secuelas y dos precuelas.</p>
+ 
+</div>
+
+
+<div id="Equipo">
+ <h3> Equipo </h3>
+ <ul>
+ <li>Equipo de StarTrek</li>
+ <li>Equipo de StarTrek</li>
+ <li>Equipo de StarTrek</li>
+ <li>Equipo de StarTrek</li>
+ <li id="lista">Equipo de StarTrek</li>
+ </ul>
+</div>
+
+
+ 
+<div id="Tabla">
+ <table>
+  <caption>Numeros</caption>
+  <tr>
+   <th scope="row">Columna0</th>
+   <th>Columna1</th>
+   <th>Columna2</th>
+   <th>Columna3</th>
+  </tr>
+  
+  <tr>
+   <td>Fila1</td>
+   <td>764</td>
+   <td>234</td>
+   <td>345</td>
+  </tr>
+
+  <tr>
+   <td>Fila2</td>
+   <td>218</td>
+   <td>954</td>
+   <td>939</td>
+  </tr>
+
+  <tr>
+   <td>Fila3</td>
+   <td>456</td>
+   <td>777</td>
+   <td>124</td>
+  </tr> 
+ </table>
+</div>
+
+<input type="button" value="Ocultar todo menos h1" onclick="fun.ocultar()" />
+<input type="button" value="Mostrar todo" onclick="fun.mostrar()" />
+<input type="button" value="Cambiar a texto random" onclick="fun.cambiar()" />
+<input type="button" value="Cambiar a StarTrek" onclick="fun.cambiarST()" />
+<input type="button" value="Añadir historia de StarTrek" onclick="fun.addHistoria()" />
+<input type="button" value="Añadir participante a equipo de StarTrek" onclick="fun.addEquipo()" />
+<input type="button" value="Eliminar todo el equipo" onclick="fun.eliminarEquipo()" />
+<input id="mostrarDatos" type="button" value="Mostrar elemento padre y tipos" onclick="fun.mostrarDatos()" />
+ 
+<footer>
+    <a href="http://validator.w3.org/check/referer" hreflang="en-us"> <img src="valid-html5-button.png" alt="¡HTML5  válido!" height="31" width="88" /></a>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+      <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="¡CSS Válido!" /></a>
+</footer>
+</body>
+</html>
