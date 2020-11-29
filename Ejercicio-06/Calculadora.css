@@ -41,3 +41,7 @@ div {
 div ul {
 	list-style-type: none;
 }
+
+h2 {
+	display: none;
+}
