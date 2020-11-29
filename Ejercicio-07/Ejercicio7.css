@@ -6,3 +6,8 @@ h1{
     text-align:center;
     color: black;
 }
+
+section {
+	gap: 2em;
+	padding: 2em;
+}
