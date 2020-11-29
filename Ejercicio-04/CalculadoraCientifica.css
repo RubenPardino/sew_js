@@ -9,7 +9,8 @@ body {
 section {
     grid-column: 1;
     display: grid;
-    gap: 0.6em;
+    gap: 2em;
+	padding: 2em;
     grid-template-columns: repeat(4,0.6fr);
     background-color: #e0eba4;
     color: #000000;
