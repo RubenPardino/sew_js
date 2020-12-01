@@ -32,7 +32,6 @@ header{
 div {
     grid-column: span 2;
     height: 10em;
-    font-size: 2em;
     overflow-y: scroll;
     font-size: 2em;
     text-align: right;
