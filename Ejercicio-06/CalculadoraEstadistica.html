@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, maximum-scale=0.5">
+  <title>Calculadora Estadística</title>
+  <link rel="stylesheet" href="Calculadora.css"/>
+  <!--Aquí se inicializa el objeto calculadora-->
+  <script src="Calculadora.js"></script>
+</head>
+
+<body>
+ <header>
+ <h1> Calculadora Estadística</h1>
+ </header>
+
+<section>
+ <h2>Calculadora</h2>
+ <div id="pila"></div>
+ <div id="pila2"></div>
+ <input title="pantalla" type="text" id="pantalla" disabled />
+
+ <input type="button" value="Varianza poblacional" onclick="calculadora.varianza()" />
+ <input type="button" value="Varianza muestral" onclick="calculadora.varianzaMuestral()" />
+ <input type="button" value="Desviación típica" onclick="calculadora.desviacion()" />
+ <input type="button" value="Coeficiente de correlación" onclick="calculadora.coefcorre()" />
+
+ <input type="button" value="Cambiar Pila" onclick="calculadora.cambiarPila()" />
+ <input type="button" value="Covarianza" onclick="calculadora.covarianza()" />
+ <input type="button" value="±" onclick="calculadora.cambioSigno()" />
+ <input type="button" value="Mediana" onclick="calculadora.mediana()" />
+
+ <input type="button" value="7" onclick="calculadora.digitos(7)" />
+ <input type="button" value="8" onclick="calculadora.digitos(8)" />
+ <input type="button" value="9" onclick="calculadora.digitos(9)" />
+ <input type="button" value="Media" onclick="calculadora.media()" />
+
+ <input type="button" value="4" onclick="calculadora.digitos(4)" />
+ <input type="button" value="5" onclick="calculadora.digitos(5)" />
+ <input type="button" value="6" onclick="calculadora.digitos(6)" />
+ <input type="button" value="Moda" onclick="calculadora.moda()" />
+
+ <input type="button" value="1" onclick="calculadora.digitos(1)" />
+ <input type="button" value="2" onclick="calculadora.digitos(2)" />
+ <input type="button" value="3" onclick="calculadora.digitos(3)" />
+ <input type="button" value="Enter" onclick="calculadora.enter()" />
+
+ <input type="button" value="0" onclick="calculadora.digitos(0)" />
+ <input type="button" value="." onclick="calculadora.punto()" />
+ <input type="button" value="Borrar de la pila" onclick="calculadora.borrar()" />
+ <input type="button" value="Del" onclick="calculadora.del()" />
+ 
+</section>
+
+<footer>
+<p></p>
+<a href="http://validator.w3.org/check/referer" hreflang="en-us"> <img src="valid-html5-button.png" alt="¡HTML5  válido!" height="31" width="88" /></a>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+  <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="¡CSS Válido!" /></a>
+</footer>
+</body>
+</html>
