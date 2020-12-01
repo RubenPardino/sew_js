@@ -1,3 +1,8 @@
 h1 {
 	text-align: center;
 }
+
+#ubicacion {
+	gap: 2em;
+	padding: 2em;
+}
