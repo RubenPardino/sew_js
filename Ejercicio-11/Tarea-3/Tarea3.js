@@ -53,7 +53,7 @@ class MapaEstaticoGoogle {
     getMapaEstaticoGoogle(){
         var ubicacion=document.getElementById('ubicacion');
         
-        var apiKey = "&key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU";
+        var apiKey = "&key=AIzaSyCXWU0b72cPF62RUb44e09Fx3qZZscgC-A";
         var url = "https://maps.googleapis.com/maps/api/staticmap?";
         var centro = "center=" + this.latitud + "," + this.longitud;
         var zoom ="&zoom=15";

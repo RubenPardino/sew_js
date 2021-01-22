@@ -1,8 +1,10 @@
+/*001*/
+h1 {
+    text-align: center;
+}
+
+/*100*/
 #mapa {
     height: 500px;
     width: 100%;
-}
-
-h1 {
-    text-align: center;
 }

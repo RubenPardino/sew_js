@@ -1,6 +1,5 @@
 "use strict";
-
-class MiMapa{
+class MapaDinamicoGoogle{
   constructor(){
     
   }
@@ -13,7 +12,7 @@ class MiMapa{
         mapTypeId: google.maps.MapTypeId.ROADMAP
     });
     
-    infoWindow = new google.maps.InfoWindow;
+    var infoWindow = new google.maps.InfoWindow;
     if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(function(position) {
             var pos = {
@@ -22,7 +21,7 @@ class MiMapa{
             };
 
             infoWindow.setPosition(pos);
-            infoWindow.setContent('Mi posición');
+            infoWindow.setContent('Tú');
             infoWindow.open(mapaGeoposicionado);
             mapaGeoposicionado.setCenter(pos);
           }, function() {
@@ -34,7 +33,7 @@ class MiMapa{
         }
   }
 }
-var miMapa = new MiMapa();
-miMapa.initMap();
+var mapaDinamicoGoogle = new MapaDinamicoGoogle();
+mapaDinamicoGoogle.initMap();
 
 

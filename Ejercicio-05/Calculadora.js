@@ -14,8 +14,17 @@ class CalculadoraConPila {
     suma(){
         var x = parseFloat(this.borrar(),10);
         var y = parseFloat(this.borrar(),10);
-        var z = y + x;
-        this.apilar(z);
+        if (isNaN(x)) {
+            document.getElementById('pantalla').value = "No se puede sumar sin tener nada apilado";
+        }
+        else if (isNaN(y)) {
+            this.apilar(x);
+            document.getElementById('pantalla').value = "No se puede sumar solo un elemento";
+        }
+        else {
+            var z = y + x;
+            this.apilar(z);
+        }
     }
 
     resta(){
@@ -62,7 +71,7 @@ class CalculadoraConPila {
     }
 
     enter(){
-        if (document.getElementById('pantalla').value!="" && document.getElementById('pantalla').value!=".")
+        if (document.getElementById('pantalla').value!="" && document.getElementById('pantalla').value!="." && !isNaN(document.getElementById('pantalla').value))
             this.apilar(document.getElementById('pantalla').value);
     }
 

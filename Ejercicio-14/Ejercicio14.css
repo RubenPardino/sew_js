@@ -1,20 +1,24 @@
+/*001*/
 body{
     background-color:white;
     color:black;
 }
 
+/*001*/
 h1{
     text-align:center;
 	background-color:white;
     color: black;
 }
 
+/*100*/
 #drop_zone {
     border: 1px solid black;
     width:  200px;
     height: 200px;
 }
 
+/*100*/
 #canvas {
     border: 1px solid black;
     width:  1000px;

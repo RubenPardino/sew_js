@@ -1,11 +1,15 @@
-#mapa {
-    height: 500px;
-    width: 100%;
-}
+/*001*/
 h1 {
     text-align: center;
 }
 
+/*001*/
 h2 {
     text-align: center;
+}
+
+/*100*/
+#mapa {
+    height: 500px;
+    width: 100%;
 }

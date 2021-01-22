@@ -1,3 +1,4 @@
+/*001*/
 body {
     background-color: #ffffff;
     color: #000000;
@@ -6,6 +7,7 @@ body {
     grid-template-columns: repeat(3,0.6fr);
 }
 
+/*001*/
 section {
     grid-column: 1;
     display: grid;
@@ -17,12 +19,14 @@ section {
     border: 0.125em #000000 solid;
 }
 
+/*001*/
 header{
     grid-column: span 4;
     background-color: #ffffff;
     color: #000000;
 }
 
+/*100*/
 #pantalla {
     grid-column: span 4;
     height: 3em;

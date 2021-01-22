@@ -1,6 +1,7 @@
 "use strict";
 class ClaseFunciones {
     constructor(){
+      this.sumado = false;
     }
 
     ocultar(){
@@ -45,6 +46,37 @@ class ClaseFunciones {
       $("#Equipo").remove();
     }
 
+    sumarTabla() {
+      if (!this.sumado){
+        var tabla = document.getElementById('tabla');
+
+        for (var i=1;i<tabla.children[1].children.length;i++){
+          tabla.children[1].children[i].append(this.sumaFilas(tabla.children[1].children[i].children));
+          
+        }
+
+        for (var i=1;i<tabla.children[1].children.length;i++){
+          var suma = 0;
+          var j=1
+          var a = tabla.children[1].children[j];
+          for (j;j<a.children.length;j++){
+            var valor = tabla.children[1].children[j].children[i].innerText;
+            suma+= parseFloat(valor);
+          }
+          tabla.children[1].children[3].children[i].append("\n"+suma);
+        }
+        this.sumado=true;
+      }
+    }
+
+    sumaFilas(filas) {
+      var suma=0;
+      for (var i = 1;i<filas.length;i++){
+        suma+= parseFloat(filas[i].innerText);
+      }
+      return suma;
+    }
+
     mostrarDatos(){
         $("*", document.body).each(function() {
             var etiquetaPadre = $(this).parent().get(0).tagName;
@@ -55,18 +87,3 @@ class ClaseFunciones {
 }
 
 var fun = new ClaseFunciones();
-
-
-/*
-    var sumaf1=0;
-    var sumaf2=0;
-    var sumaf3=0;
-    //FALTA LO DE LA TABLA
-    $("table tr td").each(function() {
-        var textoCelda = $(this).text();
-        if ($.trim(textoCelda) == '') {
-            $(this).css('background-color', 'cyan');
-        }
-    });
-    
-*/

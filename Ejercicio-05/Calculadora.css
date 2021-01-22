@@ -1,3 +1,4 @@
+/*001*/
 body {
     background-color: #ffffff;
     color: #000000;
@@ -6,6 +7,7 @@ body {
     grid-template-columns: repeat(3,0.6fr);
 }
 
+/*001*/
 section {
     grid-column: 1;
     display: grid;
@@ -17,18 +19,26 @@ section {
     border: 0.125em #000000 solid;
 }
 
+section input {
+    width: 20em;
+    height: 5em;
+}
+
+/*001*/
 header{
     grid-column: span 4;
     background-color: #ffffff;
     color: #000000;
 }
 
+/*100*/
 #pantalla {
     grid-column: span 4;
     height: 3em;
     font-size: 1em;
 }
 
+/*001*/
 div {
     grid-column: span 4;
     height: 10em;
@@ -37,6 +47,7 @@ div {
     text-align: right;
 }
 
+/*002*/
 div ul {
 	list-style-type: none;
 }
